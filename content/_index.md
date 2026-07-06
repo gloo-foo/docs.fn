@@ -1,6 +1,7 @@
 ---
 title: fn
 ---
+
 **`fn` adapts a [gloo-foo](https://github.com/gloo-foo/framework) command — one, or several composed — into an ordinary Go data function.** A gloo command is a `Command[[]byte, []byte]`, a transform over a stream of input lines; ideal for wiring pipelines and Unix executables, but awkward to call from ordinary code where you hold a buffer or a reader and want one back. `fn` closes that gap: it wraps any command in an immutable `Pipeline` whose method values are plain, directly-callable functions over standard data types.
 
 - **Source:** [gloo-foo/fn](https://github.com/gloo-foo/fn)
