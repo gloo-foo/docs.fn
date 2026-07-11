@@ -9,7 +9,7 @@ title: fn
 
 ## Install
 
-```
+```sh
 go get github.com/gloo-foo/fn
 ```
 
